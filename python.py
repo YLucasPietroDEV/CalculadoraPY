@@ -1,18 +1,19 @@
+#Função soma
 def somar(a, b):
     return a + b
-
+#Função subtração
 def subtrair(a, b):
     return a - b
-
+#Função Dividir, com filtro de erro para nao existir divisão por 0
 def dividir(a, b):
     if b != 0:
         return a / b
     else:
         return "Erro: divisão por zero"
-
+#Função Multiplicação
 def multiplicar(a, b):
     return a * b
-
+#Função principal do codigo
 def main():
     print("Calculadora")
         
@@ -36,7 +37,7 @@ def main():
             break  # Se os números forem válidos, saia do loop
         except ValueError:
             print("Erro: Por favor, digite um número válido.")
-
+#Looping para fazer outras operações, ele chama a função principal até que o usuario escolha sair
 while True:
     if __name__ == "__main__":
         main()
